@@ -1,0 +1,83 @@
+/* Base Styles */
+.container, 
+.row, 
+.h2 {
+    text-align: center;
+}
+
+/* Login Container */
+.login-container {
+    margin: 5% auto; /* Center the container */
+}
+
+/* Login Form Styling */
+.login-form-1 {
+    padding: 5%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2), 0 9px 26px rgba(0, 0, 0, 0.19);
+    border-radius: 8px; /* Rounded corners for the form */
+    background-color: #fff; /* Background color for better contrast */
+}
+
+.login-form-1 h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem; /* Spacing below the heading */
+}
+
+.login-container form {
+    padding: 2% 5%; /* Adjusted padding for better spacing */
+}
+
+/* Button Styling */
+.btnSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.login-form-1 .btnSubmit {
+    color: #fff;
+    background-color: #0062cc;
+}
+
+.login-form-1 .btnSubmit:hover {
+    background-color: #004a99; /* Darker shade for hover effect */
+}
+
+/* Forget Password Link Styling */
+.login-form-2 .ForgetPwd, 
+.login-form-1 .ForgetPwd {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-form-2 .ForgetPwd {
+    color: #fff;
+}
+
+.login-form-1 .ForgetPwd {
+    color: #0062cc;
+}
+
+.login-form-1 .ForgetPwd:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-form-1 {
+        padding: 3%; /* Reduce padding on smaller screens */
+    }
+
+    .btnSubmit {
+        width: 100%; /* Full-width button on small screens */
+    }
+
+    .login-container form {
+        padding: 5%; /* Adjust form padding */
+    }
+}
